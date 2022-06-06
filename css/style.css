@@ -1,0 +1,532 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+
+
+.flex{
+	display: flex;
+}
+.container{
+	max-width: 1105px;
+	margin: auto;
+	padding: 0 15px;
+}
+.logo img{
+	margin: 27px 0 30px 0;
+	width: 60px;
+	height: 60px;
+}
+.logo_name{
+	font-family: Roboto;
+	font-size: 30px;
+	font-weight: 400;
+	padding-top: 40px;
+	margin-left: 15px;
+}
+.logo_name a{
+	color: rgb(39, 36, 36)
+}
+.phone{
+	font-family: Roboto;
+	font-size: 19px;
+	font-weight: 400;
+	padding-top: 47px;
+	margin-left: 15px;
+	flex-grow: 1;
+	text-align: right;
+}
+.phone a{
+	color: rgb(39, 36, 36);
+}
+.back_photo{
+	background: url(../img/bg1.jpg) 0 50%/cover no-repeat;
+	height: 750px;
+}
+.tagle{
+	font-family: Lato;
+	font-size: 35px;
+	font-weight: 900;
+	padding-top: 150px;
+	position: absolute;
+	left: 55%;
+	color: white;
+    text-shadow: 0 3px black;
+}
+.tagle_2{
+	margin-top: 40px;
+}
+.tagle_3{
+	margin-top: 100px;
+	color: rgb(243, 191, 236);
+}
+.plus_tagle{
+	font-family: Roboto;
+	font-size: 30px;
+	font-weight: 700;
+	margin-top: 50px;
+	color: rgb(65, 20, 41);
+	text-align: center;
+}
+.flex_plus{
+	margin: 0 auto;
+	display:flex;
+	max-width: 700px;
+	flex-wrap:wrap;
+	justify-content:space-evenly;
+	padding-bottom: 90px;
+}
+.plus{
+	flex: 0 1 40%;
+	margin-top: 50px;
+	margin: 50px 30px 0 30px;
+}
+.plus_title{
+	font-family: Roboto;
+	font-size: 23px;
+	font-weight: 700;
+	color:rgb(151, 52, 101);
+	margin-top: 10px;
+}
+.plus_subtitle{
+	margin: 30px 0 0 0;
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: 400;
+	color:rgb(0, 0, 7);
+	
+}
+.plus_photo{
+	height: 60px;
+}
+.plus_photo_1{
+	background: url('../img/para.png') 0 0/ auto 100%  no-repeat;
+}
+.plus_photo_2{
+	background: url('../img/love.png') 0 0/ auto 100%  no-repeat;
+}
+.plus_photo_3{
+	background: url('../img/chair.png') 0 0/ auto 100%  no-repeat;
+}
+.plus_photo_4{
+	background: url('../img/kino.png') 0 0/ auto 100%  no-repeat;
+}
+.plus_photo_5{
+	background: url('../img/diner.png') 0 0/ auto 100%  no-repeat;
+}
+.plus_photo_6{
+	background: url('../img/romantic.png') 0 0/ auto 100%  no-repeat;
+}
+.backgroung_grey{
+	background: rgb(240, 240, 240);
+}
+.address{
+	font-family: Roboto;
+	font-size: 23px;
+	font-weight: 700;
+	padding-top: 47px;
+	margin-left: 15px;
+	color:rgb(0, 0, 7);
+}
+.metro{
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: 500;
+	padding-top: 30px;
+	margin-left: 15px;
+	color:hotpink;
+}
+.flex_room{
+	display: flex;
+	flex-wrap: wrap;
+}
+.room{
+	flex: 0 1 33.333%;
+	padding: 0 12px;
+	margin: 50px auto;
+	display: flex;
+	flex-direction: column;
+}
+.room_photo{
+	height: 220px;
+	transition: 0.8s;
+}
+.room_1{
+	background: url('../img/6/1.jpg') 0 0/auto 100%  no-repeat;
+}
+.room_2{
+	background: url('../img/6/2.jpg') 0 0/auto 100%  no-repeat;
+}
+.room_3{
+	background: url('../img/6/3.jpg')center 0/auto 100% no-repeat;
+}
+.room_4{
+	background: url('../img/6/4.jpg') 0 0/auto 100% no-repeat;
+}
+.room_5{
+	background: url('../img/6/5.jpg') 0 0/auto 100% no-repeat;
+}
+.room_name{
+	font-family: Roboto;
+	font-size: 20px;
+	font-weight: 400;
+	padding-top: 20px;
+	color:hotpink;
+	text-align: center;
+}
+.room_description{
+	font-family: Roboto;
+	font-size: 15px;
+	font-weight: 400;
+	padding-top: 20px;
+	color:rgb(7, 1, 4);
+	flex: 1 1 auto;
+	text-align: center;
+}
+.room_price{
+	font-family: Roboto;
+	font-size: 25px;
+	font-weight: 700;
+	padding-top: 50px;
+	color:rgb(92, 38, 3);
+	text-align: center;
+}
+.room_button{
+	font-family: Roboto;
+	font-size: 18px;
+	line-height: 115%;
+	font-style: normal;
+	font-weight: normal;
+	transition: background 0.8s, color 0.8s, box-shadow 1s;
+	width: 160px;
+	height: 45px;
+	padding-top: 10px;
+	color: white;
+	margin: 20px auto;
+	border: 2px solid hotpink;
+	background-color: hotpink;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	text-align: center;
+	
+}
+.room_button:hover{
+	background-color: rgb(224, 221, 221);
+	color: rgb(241, 43, 142);
+}
+.backgroung_light{
+	background: white;
+}
+.room_6{
+	background: url('../img/6.jpg') 0 0/auto 100%  no-repeat;
+}
+.room_7{
+	background: url('../img/7.jpg') 0 0/auto 100%  no-repeat;
+}
+.room_8{
+	background: url('../img/8.jpg') 0 0/auto 100% no-repeat;
+}
+.room_9{
+	background: url('../img/9.jpg') 0 0/100% auto  no-repeat;
+}
+.room_10{
+	background: url('../img/10.jpg') 0 0/auto 100% no-repeat;
+}
+.button_light:hover{
+	background-color: rgb(255, 255, 255);
+}
+
+
+.maps{
+	margin: 0 auto;
+}
+iframe{
+	height: 450px;
+}
+
+
+.background_dark{
+	min-height: 70px;
+	background-color: rgb(46, 46, 46);
+	padding: 20px 0;
+	
+}
+
+.create{
+	font-family: Roboto;
+	color: white;
+	font-size: 13px;
+	line-height: 1.6;
+	flex: 0 1 25%;
+	margin: auto 0;
+	padding-left: 70px;
+}
+.address_footer{
+	font-family: Roboto;
+	color: white;
+	font-size: 16px;
+	font-weight: 400;
+	margin: auto 0;
+	flex: 0 1 25%;
+	text-align: center;
+}
+.money{
+	font-family: Roboto;
+	color: white;
+	font-size: 15px;
+	line-height: 1.6;
+	flex: 0 1 25%;
+	text-align: center;
+}
+.phone_footer a{
+	font-family: Roboto;
+	color: rgb(255, 255, 255);
+}
+.phone_footer{
+	font-size: 20px;
+	font-weight: 400;
+	margin: auto 0;
+	flex: 0 1 25%;
+	text-align: center;
+}
+@media (max-width: 3000px){
+	.room_photo:hover{
+		transform: scale(1.8);
+	}
+}
+@media (max-width: 1850px){
+	.room_photo:hover{
+		transform: scale(1.8);
+	}
+}
+@media (max-width: 1400px){
+	.room{
+		display: flex;
+		flex-direction: column;
+	}
+	.room_photo{
+		text-align: center;
+		margin: auto;
+		width: 330px;
+	}
+	.room_1:hover{
+		transform: scale(1.8) translate(40%);
+	}
+	.room_3:hover{
+		transform: scale(1.8) translate(-40%);
+	}
+	.room_6:hover{
+		transform: scale(1.8) translate(40%);
+	}
+	.room_8:hover{
+		transform: scale(1.8) translate(-40%);
+	}
+}
+@media (max-width: 1105px){
+	.contaner{
+		max-width: 970px;
+	}
+	.plus_tagle{
+		text-align: center;
+	}
+	.flex_plus{
+		margin: auto;
+	}
+	.flex_room{
+		display:flex;
+	}
+	.room{
+		flex: 0 1 50%;
+		padding: 0 12px;
+		margin: 50px auto;
+		display: flex;
+		flex-direction: column;
+	}
+	.address{
+		text-align: center;
+	}
+	.metro{
+		text-align: center;
+	}
+	.room_1:hover{
+		transform: scale(1.8) translate(30%);
+	}
+	.room_2:hover{
+		transform: scale(1.8) translate(-30%);
+	}
+	.room_3:hover{
+		transform: scale(1.8) translate(30%);
+	}
+	.room_4:hover{
+		transform: scale(1.8) translate(-30%);
+	}
+	.room_6:hover{
+		transform: scale(1.8) translate(30%);
+	}
+	.room_7:hover{
+		transform: scale(1.8) translate(-30%);
+	}
+	.room_8:hover{
+		transform: scale(1.8) translate(30%);
+	}
+	.room_9:hover{
+		transform: scale(1.8) translate(-30%);
+	}
+	.create{
+		font-size: 12px;
+	}
+	.address_footer{
+		font-size: 14px;
+	}
+	.money{
+		font-size: 12px;
+	}
+	.phone_footer{
+		font-size: 17px;
+	}
+}
+@media (max-width: 992px){
+	.contaner{
+		max-width: 750px;
+	}
+	.dark_background_photo{
+		display: none;
+	}
+	.create{
+		font-size: 10px;
+	}
+	.address_footer{
+		font-size: 12px;
+	}
+	.money{
+		font-size: 10px;
+	}
+	.phone_footer{
+		font-size: 14px;
+	}
+}
+@media (max-width: 767px){
+	.contaner{
+		max-width: none;
+	}
+}
+@media (max-width: 737px){
+	.contaner{
+		max-width: none;
+	}
+	.tagle{
+		text-align: left;
+	}
+	.tagle{
+		font-size: 23px;
+		left: 0;
+		margin-left: 20px;
+	}
+	.plus_title{
+		font-size: 19px;
+	}
+	.plus_subtitle{
+		font-size: 15px;
+	}
+	.plus{
+		width: 170px;
+	}
+	.room_1:hover{
+		transform: scale(1.6) translate(0);
+	}
+	.room_2:hover{
+		transform: scale(1.6) translate(0);
+	}
+	.room_3:hover{
+		transform: scale(1.6) translate(0);
+	}
+	.room_4:hover{
+		transform: scale(1.6) translate(0);
+	}
+	.room_5:hover{
+		transform: scale(1.6) translate(0);
+	}
+	.room_6:hover{
+		transform: scale(1.6) translate(0);
+	}
+	.room_7:hover{
+		transform: scale(1.6) translate(0);
+	}
+	.room_8:hover{
+		transform: scale(1.6) translate(0);
+	}
+	.room_9:hover{
+		transform: scale(1.6) translate(0);
+	}
+	.room_10:hover{
+		transform: scale(1.6) translate(0);
+	}
+	.create{
+		font-size: 8px;
+		padding-left: 10px;
+	}
+	.address_footer{
+		font-size: 11px;
+	}
+	.money{
+		font-size: 9px;
+	}
+	.phone_footer{
+		font-size: 12px;
+	}
+}@media (max-width: 540px){
+	.room_1:hover{
+		transform: none;
+	}
+	.room_2:hover{
+		transform: none;
+	}
+	.room_3:hover{
+		transform: none;
+	}
+	.room_4:hover{
+		transform: none;
+	}
+	.room_5:hover{
+		transform: none;
+	}
+	.room_6:hover{
+		transform: none;
+	}
+	.room_7:hover{
+		transform: none;
+	}
+	.room_8:hover{
+		transform: none;
+	}
+	.room_9:hover{
+		transform: none;
+	}
+	.room_10:hover{
+		transform: none;
+	}
+}
+@media (max-width: 420px){
+	.contaner{
+		max-width: none;
+	}
+	.phone{
+		font-size: 15px;
+		margin-left: 5px;
+	}
+	.logo_name{
+		font-size: 20px;
+	}
+}
